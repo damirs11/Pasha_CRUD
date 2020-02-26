@@ -1,0 +1,70 @@
+﻿<Window x:Class="Pasha_CRUD_rider.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Pasha_CRUD_rider"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+    
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+    
+            <TextBlock
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Вход" />
+    
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Логин" />
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Width="Auto"
+                Height="Auto"
+                Margin="10"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center" />
+    
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="Пароль" />
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Width="Auto"
+                Height="Auto"
+                Margin="10"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center" />
+    
+            <Button
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Width="Auto"
+                Height="Auto"
+                Margin="10"
+                Click="Button_Click"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                Content="Войти" />
+        </Grid>
+</Window>
